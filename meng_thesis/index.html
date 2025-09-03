@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEng. Thesis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: whitesmoke;
+            font-family: Roboto, sans-serif;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .canvas{
+            background-color: #222;
+            width: 50%;
+            padding: 5%;
+            text-align: justify;
+        }
+
+        h1{
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 5px 0;
+        }
+
+        a:hover{
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas">
+            <h1>Title:</h1>
+            <h2>
+                <a href="https://escholarship.mcgill.ca/concern/theses/q237hx06z">
+                Statistical analysis and machine learning algorithms for RF breast cancer screening
+                </a>
+            </h2>
+            <h1>Abstract:</h1>
+            <p>
+                The work of this thesis explores statistical and machine learning methods for anomaly
+                detection in a novel low-power microwave breast cancer screening system. Reported
+                dielectric contrast in the microwave frequency range between healthy and malign
+                breast tissue is the main motivator behind the effort to design a time-domain radar-based 
+                prototype for safe breast screening. The microwave radar does not strive to
+                yield a three-dimensional image of the breast interior. Instead, its aimed use would
+                be for frequent monthly screenings which have the potential to detect a departure
+                from the normal, hence increasing the chance of early detection and, in turn, successful 
+                treatment. The data used for the development of the algorithms was obtained
+                either in controlled laboratory experiments on tissue-mimicking phantoms or in a
+                clinical setting. Since the data is preliminary and scarce, the conclusions may be
+                limited, but in the process of the algorithmic development, this work strives to take
+                into account the nature of the signals and how they have been generated in this very
+                new application. The following methods were adapted and applied to the data sets:
+                simple statistical analysis to illustrate the differences in the data sets investigated
+                in this work; discrete Fourier transform, short-time Fourier transform, empirical
+                mode decomposition and ad hoc time domain analysis to derive effective feature
+                extraction strategies for the radio-frequency radar scans; high-dimensional statisti-
+                cal hypothesis tests to investigate the characteristics of time-frequency features ex-
+                tracted; random search, random walk, simulated annealing, genetic algorithm and
+                particle swarm derivative-free optimization algorithms to improve the computational
+                efficiency of an ensemble cost-sensitive support vector machine classifier based on
+                previous literature; and a forward step-wise ensemble selection algorithm to improve
+                the predictive performance of the classifier. For each of the methods, the results were
+                discussed in the light of the limitations of the collected data sets. Older data sets 
+                were found to have high signal amplitudes on average. Statistically significant differences 
+                between features extracted from scans with anomalies and scans without
+                anomalies were only observed for scans of subjects with higher average permittivity.
+                The time-frequency analysis features yielded superior predictive performance than
+                feature extraction using dimensionality reduction by principal component analysis.
+                The computational efficiency of the classifier was improved by a factor of at least
+                3.8 when optimization algorithms were used for hyperparameter selection, instead of
+                an exhasutive grid search. With the data available, the forward step-wise selection
+                algorithm did not improve the predictive performance as was anticipated.
+            </p>
+            <h1>Full Document:</h1>
+            <a href="./collinapjoseph_meng_thesis.pdf">Download full thesis PDF</a>
+        </div>
+    </div>
+</body>
+</html>

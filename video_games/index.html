@@ -3,18 +3,41 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Video Games</title>
-        <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: black;
+                color: lightgray;
+                font-family: Roboto, sans-serif;
+            }
+
+            a {
+                color: whitesmoke;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:hover{
+                background-color: #333;
+            }
+
+            .content-box{
+                background-color: #111;
+                padding: 2.5% 5%;
+            }
+        </style>
     </head>
     <body>
         <h1>Video Games</h1>
         <hr/>
-        <h2>Sinky Ball</h2>
-        <p>
-            Flappy Bird, but a ball that sinks.<br/>
-            Play <a href="./sinky_ball/index.html">here</a>.
-        </p>
+        <div class="content-box">
+            <h2>Sinky Ball</h2>
+            <p>
+                Flappy Bird, but a ball that sinks.<br/>
+                <a href="./sinky_ball/index.html">Play here</a>.
+            </p>
+        </div>
     </body>
 </html>
