@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Collin Joseph</title>
-        <link href="./style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container-box">
-            <div class="header-box">
-                <h1>Collin Joseph</h1>
-            </div>
-            <div class="content-box">
-                <a href="./meng_thesis/index.html">Engineering Thesis</a>
-            </div>        
-            <div class="content-box">
-                <a href="./web_projects/index.html">Web Projects</a>
-            </div>
-            <div class="content-box">
-                <a href="./video_games/index.html">Video Games</a>
-            </div>            
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Collin Joseph</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        height: 100vh;
+      }
+
+      .header-box {
+        color: whitesmoke;
+        text-align: center;
+        width: 300px;
+        border-bottom: 1px solid whitesmoke;
+      }
+
+      .content-box {
+        width: 175px;
+        padding: 5px 10px;
+        border-color: white;
+        border-style: solid;
+        border-width: 0 0 1px 1px;
+      }
+
+      .content-box:hover {
+        background-color: #333;
+        color: whitesmoke;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="header-box gradient-background">
+        <h1>Collin Joseph</h1>
+      </div>
+      <a href="./meng_thesis/index.html">
+        <div class="content-box">Engineering Thesis</div>
+      </a>
+      <a href="./online_certifications/index.html">
+        <div class="content-box">Online Certifications</div>
+      </a>
+      <a href="./web_projects/index.html">
+        <div class="content-box">Web Projects</div>
+      </a>
+      <a href="./video_games/index.html">
+        <div class="content-box">Video Games</div>
+      </a>
+    </div>
+  </body>
 </html>

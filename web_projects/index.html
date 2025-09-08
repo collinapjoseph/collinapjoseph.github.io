@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Web Projects</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      h1 {
+        color: whitesmoke;
+        margin: 0;
+        padding: 20px;
+        border-bottom: 1px solid whitesmoke;
+      }
 
-        <style>
-            body {
-                background-color: black;
-                color: lightgray;
-                font-family: Roboto, sans-serif;
-            }
-
-            a {
-                color: whitesmoke;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-            a:hover{
-                background-color: #333;
-            }
-
-            .content-box{
-                background-color: #111;
-                padding: 2.5% 5%;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Web Projects</h1>
-        <hr/>
-        <div class="content-box">
-            <h2>CSS Pixel Mario</h2>
-            <p>
-                Pixel Mario drawn using HTML and CSS. <br/>
-                <a href="./pixel_mario/index.html">View here</a>.
-            </p>
-        </div>
-        <div class="content-box">
-            <h2>Mondrian Painting</h2>
-            <p>
-                A Mondrian-style image made using HTML and CSS. <br/>
-                <a href="./mondrian_painting/index.html">View here.</a>
-            </p>
-        </div>
-        <div class="content-box">
-            <h2>A Silly Motivational</h2>
-            <p>
-                A motivational poster made using HTML and CSS. <br/>
-                <a href="./silly_motivational/index.html">View here</a>.
-            </p>
-        </div>
-    </body>
+      .content-box {
+        padding: 2.5% 5%;
+        border-bottom: 1px solid #111;
+      }
+      
+      .content-box:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="gradient-background">Web Projects</h1>
+    <a href="./pixel_mario/index.html">
+      <div class="content-box">
+        <h2>CSS Pixel Mario</h2>
+        <p>Pixel Mario drawn using HTML and CSS.</p>
+      </div>
+    </a>
+    <a href="./bootstrap_project/index.html">
+      <div class="content-box">
+        <h2>Tindog (Bootstrap Project)</h2>
+        <p>
+          Tinder for dogs. A webpage made using the Bootstrap framework (HTML,
+          CSS, JS).
+        </p>
+      </div>
+    </a>
+    <a href="./mondrian_painting/index.html">
+      <div class="content-box">
+        <h2>Mondrian Painting</h2>
+        <p>A Mondrian-style image made using HTML and CSS.</p>
+      </div>
+    </a>
+    <a href="./silly_motivational/index.html">
+      <div class="content-box">
+        <h2>A Silly Motivational</h2>
+        <p>A motivational poster made using HTML and CSS.</p>
+      </div>
+    </a>
+  </body>
 </html>

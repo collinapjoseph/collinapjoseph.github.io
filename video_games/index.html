@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Video Games</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background-color: black;
-                color: lightgray;
-                font-family: Roboto, sans-serif;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      h1 {
+        color: whitesmoke;
+        margin: 0;
+        padding: 20px;
+        border-bottom: 1px solid whitesmoke;
+      }
 
-            a {
-                color: whitesmoke;
-                text-decoration: none;
-                font-weight: bold;
-            }
+      .content-box {
+        padding: 2.5% 5%;
+        border-bottom: 1px solid #111;
+      }
 
-            a:hover{
-                background-color: #333;
-            }
-
-            .content-box{
-                background-color: #111;
-                padding: 2.5% 5%;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Video Games</h1>
-        <hr/>
-        <div class="content-box">
-            <h2>Sinky Ball</h2>
-            <p>
-                Flappy Bird, but a ball that sinks.<br/>
-                <a href="./sinky_ball/index.html">Play here</a>.
-            </p>
-        </div>
-    </body>
+      .content-box:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="gradient-background">Video Games</h1>
+    <a href="./sinky_ball/index.html">
+      <div class="content-box">
+        <h2>Sinky Ball</h2>
+        <p>Flappy Bird, but a ball that sinks.</p>
+      </div>
+    </a>
+  </body>
 </html>

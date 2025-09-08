@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <style>
         body{
-            background-color: black;
             color: whitesmoke;
-            font-family: Roboto, sans-serif;
             margin: 0;
         }
 
@@ -36,13 +35,17 @@
         }
 
         a{
-            text-decoration: none;
             color: whitesmoke;
-            padding: 5px 0;
+            padding: 5px;
         }
 
-        a:hover{
-            background-color: #333;
+        @media(max-width:1200px)
+        {
+            .container{
+                align-items: start;
+                padding: 50px 0px;
+                height: 100%;
+            }
         }
     </style>
 </head>
@@ -55,6 +58,14 @@
                 Statistical analysis and machine learning algorithms for RF breast cancer screening
                 </a>
             </h2>
+
+            <h1>Details:</h1>
+            <p>
+                McGill University <br>
+                Department of Electrical Engineering<br>
+                Dr. Milicia Popovich
+            </p>
+
             <h1>Abstract:</h1>
             <p>
                 The work of this thesis explores statistical and machine learning methods for anomaly
