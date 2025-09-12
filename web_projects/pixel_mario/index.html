@@ -8,10 +8,12 @@
         body{
             background-color: black;
             margin: 0;
+            color: whitesmoke;
         }
 
         .container{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -19,9 +21,13 @@
 
         .canvas{
             display: grid;
-            grid-template-rows: repeat(18, 50px);
-            grid-template-columns: repeat(14, 50px);
-            background-color: #555;
+            grid-template-rows: repeat(18, 30px);
+            grid-template-columns: repeat(14, 30px);
+            background-color: grey;
+        }
+
+        .title-box{
+            text-align: center;
         }
 
         @media (max-width: 700px){
@@ -31,25 +37,11 @@
            } 
         }
 
-        .red{
-            background-color: darkred;
-        }
-
-        .blue{
-            background-color: darkblue;
-        }
-
-        .black{
-            background-color: black;
-        }
-
-        .yellow{
-            background-color: goldenrod;
-        }
-
-        .brown{
-            background-color: #543700;
-        }
+        .red{background-color: darkred;}
+        .blue{background-color: darkblue;}
+        .black{background-color: black;}
+        .yellow{background-color: goldenrod;}
+        .brown{background-color: #543700;}
 
         #r1{grid-area: 2/5/2/10}
         #r2{grid-area: 3/4/3/13}
@@ -150,6 +142,10 @@
             <div class="brown" id="b7"></div>
             <div class="brown" id="b8"></div>
             <div class="brown" id="b9"></div>
+        </div>
+        <div class="title-box">
+            <h1>Pixel Mario in CSS</h1>
+            <h2>Collin Joseph, August 2025</h2>
         </div>
     </div>
 </body>

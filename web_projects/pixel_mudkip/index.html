@@ -8,10 +8,12 @@
         body {
             background-color: black;
             margin: 0;
+            color: whitesmoke;
         }
 
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -35,16 +37,7 @@
         .orange1{background-color: #f38231;} 
         .orange2{background-color: #cc5918;} 
 
-        #ac1{grid-area: 1/5;}
-        #ac2{grid-area: 1/10;}
-        #ac3{grid-area: 1/15;}
-        #ac4{grid-area: 1/20;}
-
-        #ar1{grid-area: 5/1;}
-        #ar2{grid-area: 10/1;}
-        #ar3{grid-area: 15/1;}
-        #ar4{grid-area: 20/1;}
-
+        /*black*/
         #b1{grid-area: 2/9/3/11;}
         #b2{grid-area: 3/8;}
         #b3{grid-area: 4/7/7/8;}
@@ -77,6 +70,7 @@
         #b30{grid-area: 11/6}
         #b31{grid-area: 12/10}
         
+        /*white*/
         #w1{grid-area: 10/6;}
         #w2{grid-area: 11/10;}
         #w3{grid-area: 13/6;}
@@ -85,6 +79,7 @@
         #w6{grid-area: 9/17;}
         #w7{grid-area: 8/18/9/20;}
         
+        /*orange 1*/
         #yx1{grid-area: 10/3;}
         #yx2{grid-area: 12/3;}
         #yx3{grid-area: 12/12/14;}
@@ -92,12 +87,14 @@
         #yx5{grid-area: 12/13/13/16;}
         #yx6{grid-area: 14/14;}
         
+        /*orange 2*/
         #yy1{grid-area: 11/4/13;}
         #yy2{grid-area: 13/5;}
         #yy3{grid-area: 11/14;}
         #yy4{grid-area: 13/14;}
         #yy5{grid-area: 14/13;}
         
+        /*grey*/
         #g1{grid-area: 10/4;}
         #g2{grid-area: 6/11/8;}
         #g3{grid-area: 10/14/11/16;}
@@ -111,6 +108,7 @@
         #g11{grid-area: 17/14;}
         #g12{grid-area: 16/15;}
 
+        /*blue 1*/
         #ua1{grid-area: 3/9;}
         #ua2{grid-area: 4/8/7;}
         #ua3{grid-area: 10/5/12;}
@@ -128,6 +126,7 @@
         #ua15{grid-area: 17/8;}
         #ua16{grid-area: 18/12/19/14;}
         
+        /*blue 2*/
         #ub1{grid-area: 3/10/6;}
         #ub2{grid-area: 6/9/10;}
         #ub3{grid-area: 7/12;}
@@ -137,6 +136,7 @@
         #ub7{grid-area: 11/17;}
         #ub8{grid-area: 10/18/11/20;}
 
+        /*blue 3*/
         #uc1{grid-area: 4/9/6;}
         #uc2{grid-area: 6/10/9;}
         #uc3{grid-area: 7/8/9;}
@@ -148,6 +148,7 @@
         #uc9{grid-area: 16/11;}
         #uc10{grid-area: 16/13/17/15;}
         
+        /*blue 4*/
         #ud1{grid-area: 9/5;}
         #ud2{grid-area: 12/5;}
         #ud3{grid-area: 13/7;}
@@ -161,6 +162,7 @@
         #ud11{grid-area: 14/16/17;}
         #ud12{grid-area: 15/15;}
         
+        /*blue 5*/
         #ue1{grid-area: 16/9/17/11;}
         #ue2{grid-area: 11/16;}
         #ue3{grid-area: 12/17;}
@@ -294,6 +296,10 @@
             <div class="blue5" id="ue4"></div>
             <div class="blue5" id="ue5"></div>
             <div class="blue5" id="ue6"></div>            
+        </div>
+        <div class="title-box">
+            <h1>Pixel Mudkip in CSS</h1>
+            <h2>Collin Joseph, September 2025</h2>
         </div>
     </div>
 </body>
