@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Mudkip 19x18</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .canvas {
+            background-color: grey;
+            display: grid;
+            grid-template-columns: repeat(21, 20px);
+            grid-template-rows: repeat(20, 20px);
+        }
+
+        .black{background-color: black;}
+        .grey{background-color: #545251;}
+        .white{background-color: white;}
+        .blue1{background-color: #87cefa;}
+        .blue2{background-color: #7ba5d6;} 
+        .blue3{background-color: #4a84ce;} 
+        .blue4{background-color: #52b3e4} 
+        .blue5{background-color: #ace5ee;} 
+        .orange1{background-color: #f38231;} 
+        .orange2{background-color: #cc5918;} 
+
+        #ac1{grid-area: 1/5;}
+        #ac2{grid-area: 1/10;}
+        #ac3{grid-area: 1/15;}
+        #ac4{grid-area: 1/20;}
+
+        #ar1{grid-area: 5/1;}
+        #ar2{grid-area: 10/1;}
+        #ar3{grid-area: 15/1;}
+        #ar4{grid-area: 20/1;}
+
+        #b1{grid-area: 2/9/3/11;}
+        #b2{grid-area: 3/8;}
+        #b3{grid-area: 4/7/7/8;}
+        #b4{grid-area: 3/11/6/12;}
+        #b5{grid-area: 7/6;}
+        #b6{grid-area: 8/5;}
+        #b7{grid-area: 9/3/10/5;}
+        #b8{grid-area: 10/2;}
+        #b9{grid-area: 11/3;}
+        #b10{grid-area: 12/2;}
+        #b11{grid-area: 13/3/14/5;}
+        #b12{grid-area: 6/12;}
+        #b13{grid-area: 7/13;}
+        #b14{grid-area: 8/14;}
+        #b15{grid-area: 9/15/10/17;}
+        #b16{grid-area: 8/17;}
+        #b17{grid-area: 7/18/8/20;}
+        #b18{grid-area: 8/20/13/21;}
+        #b19{grid-area: 13/19;}
+        #b20{grid-area: 14/18;}
+        #b21{grid-area: 14/17/17/18;}
+        #b22{grid-area: 14/5/15/7;}
+        #b23{grid-area: 15/7/18/8;}
+        #b24{grid-area: 18/8/19/10;}
+        #b25{grid-area: 17/10}
+        #b26{grid-area: 18/11}
+        #b27{grid-area: 19/12/20/14}
+        #b28{grid-area: 18/14}
+        #b29{grid-area: 17/15/18/17}
+        #b30{grid-area: 11/6}
+        #b31{grid-area: 12/10}
+        
+        #w1{grid-area: 10/6;}
+        #w2{grid-area: 11/10;}
+        #w3{grid-area: 13/6;}
+        #w4{grid-area: 14/7/15/10;}
+        #w5{grid-area: 10/16;}
+        #w6{grid-area: 9/17;}
+        #w7{grid-area: 8/18/9/20;}
+        
+        #yx1{grid-area: 10/3;}
+        #yx2{grid-area: 12/3;}
+        #yx3{grid-area: 12/12/14;}
+        #yx4{grid-area: 11/13/14;}
+        #yx5{grid-area: 12/13/13/16;}
+        #yx6{grid-area: 14/14;}
+        
+        #yy1{grid-area: 11/4/13;}
+        #yy2{grid-area: 13/5;}
+        #yy3{grid-area: 11/14;}
+        #yy4{grid-area: 13/14;}
+        #yy5{grid-area: 14/13;}
+        
+        #g1{grid-area: 10/4;}
+        #g2{grid-area: 6/11/8;}
+        #g3{grid-area: 10/14/11/16;}
+        #g4{grid-area: 11/15;}
+        #g5{grid-area: 12/16/14;}
+        #g6{grid-area: 13/15/15;}
+        #g7{grid-area: 15/13/16/15;}
+        #g8{grid-area: 14/12;}
+        #g9{grid-area: 15/8;}
+        #g10{grid-area: 17/11;}
+        #g11{grid-area: 17/14;}
+        #g12{grid-area: 16/15;}
+
+        #ua1{grid-area: 3/9;}
+        #ua2{grid-area: 4/8/7;}
+        #ua3{grid-area: 10/5/12;}
+        #ua4{grid-area: 8/6/10;}
+        #ua5{grid-area: 8/7/13;}
+        #ua6{grid-area: 12/6;}
+        #ua7{grid-area: 9/8/13;}
+        #ua8{grid-area: 10/9/14;}
+        #ua9{grid-area: 13/10/15;}
+        #ua10{grid-area: 9/10/11;}
+        #ua11{grid-area: 8/11/13;}
+        #ua12{grid-area: 8/12/11;}
+        #ua13{grid-area: 8/13/10;}
+        #ua14{grid-area: 9/14/10;}
+        #ua15{grid-area: 17/8;}
+        #ua16{grid-area: 18/12/19/14;}
+        
+        #ub1{grid-area: 3/10/6;}
+        #ub2{grid-area: 6/9/10;}
+        #ub3{grid-area: 7/12;}
+        #ub4{grid-area: 13/8;}
+        #ub5{grid-area: 13/17/14/19;}
+        #ub6{grid-area: 12/18/13/20;}
+        #ub7{grid-area: 11/17;}
+        #ub8{grid-area: 10/18/11/20;}
+
+        #uc1{grid-area: 4/9/6;}
+        #uc2{grid-area: 6/10/9;}
+        #uc3{grid-area: 7/8/9;}
+        #uc4{grid-area: 7/7;}
+        #uc5{grid-area: 16/8;}
+        #uc6{grid-area: 15/9/16/11;}
+        #uc7{grid-area: 15/12;}
+        #uc8{grid-area: 14/11;}
+        #uc9{grid-area: 16/11;}
+        #uc10{grid-area: 16/13/17/15;}
+        
+        #ud1{grid-area: 9/5;}
+        #ud2{grid-area: 12/5;}
+        #ud3{grid-area: 13/7;}
+        #ud4{grid-area: 17/9;}
+        #ud5{grid-area: 15/11;}
+        #ud6{grid-area: 13/11;}
+        #ud7{grid-area: 11/12;}
+        #ud8{grid-area: 10/13;}
+        #ud9{grid-area: 16/12/18;}
+        #ud10{grid-area: 17/13;}
+        #ud11{grid-area: 14/16/17;}
+        #ud12{grid-area: 15/15;}
+        
+        #ue1{grid-area: 16/9/17/11;}
+        #ue2{grid-area: 11/16;}
+        #ue3{grid-area: 12/17;}
+        #ue4{grid-area: 10/17;}
+        #ue5{grid-area: 9/18/10/20;}
+        #ue6{grid-area: 11/18/12/20;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas">
+            <div class="black" id="b1"></div>
+            <div class="black" id="b2"></div>
+            <div class="black" id="b3"></div>
+            <div class="black" id="b4"></div>
+            <div class="black" id="b5"></div>
+            <div class="black" id="b6"></div>
+            <div class="black" id="b7"></div>
+            <div class="black" id="b8"></div>
+            <div class="black" id="b9"></div>
+            <div class="black" id="b10"></div>
+            <div class="black" id="b11"></div>
+            <div class="black" id="b12"></div>
+            <div class="black" id="b13"></div>
+            <div class="black" id="b14"></div>
+            <div class="black" id="b15"></div>
+            <div class="black" id="b16"></div>
+            <div class="black" id="b17"></div>
+            <div class="black" id="b18"></div>
+            <div class="black" id="b19"></div>
+            <div class="black" id="b20"></div>
+            <div class="black" id="b21"></div>
+            <div class="black" id="b22"></div>
+            <div class="black" id="b23"></div>
+            <div class="black" id="b24"></div>
+            <div class="black" id="b25"></div>
+            <div class="black" id="b26"></div>
+            <div class="black" id="b27"></div>
+            <div class="black" id="b28"></div>
+            <div class="black" id="b29"></div>
+            <div class="black" id="b30"></div>
+            <div class="black" id="b31"></div>
+
+            <div class="white" id="w1"></div>
+            <div class="white" id="w2"></div>
+            <div class="white" id="w3"></div>
+            <div class="white" id="w4"></div>
+            <div class="white" id="w5"></div>
+            <div class="white" id="w6"></div>
+            <div class="white" id="w7"></div>
+            
+            <div class="orange1" id="yx1"></div>
+            <div class="orange1" id="yx2"></div>
+            <div class="orange1" id="yx3"></div>
+            <div class="orange1" id="yx4"></div>
+            <div class="orange1" id="yx5"></div>
+            <div class="orange1" id="yx6"></div>
+
+            <div class="orange2" id="yy1"></div>
+            <div class="orange2" id="yy2"></div>
+            <div class="orange2" id="yy3"></div>
+            <div class="orange2" id="yy4"></div>
+            <div class="orange2" id="yy5"></div>
+            
+            <div class="grey" id="g1"></div>
+            <div class="grey" id="g2"></div>
+            <div class="grey" id="g3"></div>
+            <div class="grey" id="g4"></div>
+            <div class="grey" id="g5"></div>
+            <div class="grey" id="g6"></div>
+            <div class="grey" id="g7"></div>
+            <div class="grey" id="g8"></div>
+            <div class="grey" id="g9"></div>
+            <div class="grey" id="g10"></div>
+            <div class="grey" id="g11"></div>
+            <div class="grey" id="g12"></div>
+
+            <div class="blue1" id="ua1"></div>
+            <div class="blue1" id="ua2"></div>
+            <div class="blue1" id="ua3"></div>
+            <div class="blue1" id="ua4"></div>
+            <div class="blue1" id="ua5"></div>
+            <div class="blue1" id="ua6"></div>
+            <div class="blue1" id="ua7"></div>
+            <div class="blue1" id="ua8"></div>
+            <div class="blue1" id="ua9"></div>
+            <div class="blue1" id="ua10"></div>
+            <div class="blue1" id="ua11"></div>
+            <div class="blue1" id="ua12"></div>
+            <div class="blue1" id="ua13"></div>
+            <div class="blue1" id="ua14"></div>
+            <div class="blue1" id="ua15"></div>
+            <div class="blue1" id="ua16"></div>
+            
+            <div class="blue2" id="ub1"></div>
+            <div class="blue2" id="ub2"></div>
+            <div class="blue2" id="ub3"></div>
+            <div class="blue2" id="ub4"></div>
+            <div class="blue2" id="ub5"></div>
+            <div class="blue2" id="ub6"></div>
+            <div class="blue2" id="ub7"></div>
+            <div class="blue2" id="ub8"></div>
+            
+            <div class="blue3" id="uc1"></div>
+            <div class="blue3" id="uc2"></div>
+            <div class="blue3" id="uc3"></div>
+            <div class="blue3" id="uc4"></div>
+            <div class="blue3" id="uc5"></div>
+            <div class="blue3" id="uc6"></div>
+            <div class="blue3" id="uc7"></div>
+            <div class="blue3" id="uc8"></div>
+            <div class="blue3" id="uc9"></div>
+            <div class="blue3" id="uc10"></div>
+            
+            <div class="blue4" id="ud1"></div>
+            <div class="blue4" id="ud2"></div>
+            <div class="blue4" id="ud3"></div>
+            <div class="blue4" id="ud4"></div>
+            <div class="blue4" id="ud5"></div>
+            <div class="blue4" id="ud6"></div>
+            <div class="blue4" id="ud7"></div>
+            <div class="blue4" id="ud8"></div>
+            <div class="blue4" id="ud9"></div>
+            <div class="blue4" id="ud10"></div>
+            <div class="blue4" id="ud11"></div>
+            <div class="blue4" id="ud12"></div>
+            
+            <div class="blue5" id="ue1"></div>
+            <div class="blue5" id="ue2"></div>
+            <div class="blue5" id="ue3"></div>
+            <div class="blue5" id="ue4"></div>
+            <div class="blue5" id="ue5"></div>
+            <div class="blue5" id="ue6"></div>            
+        </div>
+    </div>
+</body>
+</html>
