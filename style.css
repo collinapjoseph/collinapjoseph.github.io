@@ -33,3 +33,7 @@ a:hover {
     background-position: 0% 50%;
   }
 }
+
+.tech-stack {
+  font-family: 'Courier New', Courier, monospace;
+}
