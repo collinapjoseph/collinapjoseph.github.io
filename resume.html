@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollinAPJosephResume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            margin: 0; 
+            padding: 0;
+            background-color: #333;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ddd;
+            box-shadow: 0 0 10px #eee;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #0056b3;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .contact-info img{
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .phone-number{
+            margin: 0 5px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 5px;
+            margin: 0 0 5px 0;
+            font-size: 20px;
+        }
+
+        .summary{
+            text-align: justify;
+        }
+
+        /* Content Structure */
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        .item-header h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #000;
+        }
+        
+        .details-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .company-name, .institution-name {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .date, .location {
+            font-size: 14px;
+            color: #333;
+            font-style: italic;
+        }
+        
+        .location {
+            text-align: right;
+            font-weight: normal; 
+        }
+        
+        .education-details, .project-details{
+            font-size: 14px;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .education-details a, .project-details a{
+            color: #333;           
+        }
+
+        .project-stack{
+            color: #000;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .skills-row{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        @media print{
+            .resume-container{
+                margin: 0;
+            }
+            
+            .page-break{
+                break-after: always;
+                margin-bottom: 150px;
+            }
+
+            @page{
+                margin: 1cm;
+                @bottom-right{
+                    content: counter(page)
+                }                
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <header>
+            <h1>Collin A. P. Joseph</h1>
+            <p class="contact-info">
+                <img src="images/telephone.svg"> <span class="phone-number">+1 (437) 423-8797</span> | 
+                <img src="images/envelope.svg"><a href="mailto:collin.joseph.0258@gmail.com">collin.joseph.0258@gmail.com</a> | 
+                <img src="images/globe-americas.svg"><a href="https://collinapjoseph.github.io" target="_blank">collinapjoseph.github.io</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p class="summary">
+                Graduate of <b>McGill University</b> and <b>University of Waterloo</b> with a continuous growth mindset and a diverse skill pool. 
+                Proven software development expertise from <b>5 years of industry experience</b>. 
+                Highly proficient in <b>C#/.NET</b>, <b>C++</b> and <b>Python</b>. 
+                Extensive experience working on an <b>Agile Development</b> team and using tools including: <b>Git</b>, <b>GitHub</b> and <b>JIRA</b>.
+                Well versed in <b>Object Oriented Programming</b>, <b>Algorithms & Data Structures</b>, and <b>Machine Learning</b>. 
+                Rapidly expanding skills to web technologies including: <b>HTML/CSS</b>, <b>JavaScript</b> and <b>SQL</b>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="job-item">
+                <div class="item-header">
+                    <h3>Lead Software Developer</h3>
+                    <span class="date">Jun 2023 - Mar 2025</span>
+                </div>
+                <div class="details-row">
+                    <span class="company-name">Yulio Technologies Inc.</span>
+                    <span class="location">Toronto, Canada</span>
+                </div>
+                <ul>
+                    <li>Delivered new features for multiplatform (<b>.NET Core</b> & <b>.NET Framework</b>) <b>C#</b> application.</li>
+                    <li>Led multi-national development team while continuing hands-on development (<b>C#</b> & <b>C++</b>).</li>
+                    <li>Managed development of 3 key software products using <b>Agile Project Management</b>.</li>
+                    <li>Liaised with client support team to organize and triage client requests for 3 products.</li>
+                    <li>Released multiple features and updates for each product per year.</li>
+                </ul>
+            </div>
+            
+            <div class="job-item">
+                <div class="item-header">
+                    <h3>Software Developer</h3>
+                    <span class="date">Dec 2020 - Jun 2023</span>
+                </div>
+                <div class="details-row">
+                    <span class="company-name">Yulio Technologies Inc.</span>
+                    <span class="location">Toronto, Canada</span>
+                </div>
+                <ul>
+                    <li>Published and maintained multiplatform (<b>.NET Core</b> & <b>.NET Framework</b>) <b>C#</b> application.</li>
+                    <li>Implemented module to export 3D models from Autodesk Revit to glTF.</li>
+                    <li>Built <b>C#</b> <b>REST API</b> client to upload models to cloud rendering platform.</li>
+                    <li>Deployed <b>C++</b> tool to generate and manipulate HDR image-based lighting environment maps.</li>
+                    <li>Enabled native & managed runtime interoperability between modules using <b>C++/CLI</b>.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="item-header">
+                    <h3>Software Developer</h3>
+                    <span class="date">Nov 2019 - Apr 2020</span>
+                </div>
+                <div class="details-row">
+                    <span class="company-name">wrnch AI</span>
+                    <span class="location">Montreal, Canada</span>
+                </div>
+                <ul>
+                    <li>Delivered new features for <b>Computer Vision</b> inference server using <b>C++</b>.</li>
+                    <li>Improved existing features and modules in an <b>Agile</b> development workflow.</li>
+                    <li>Prototyped new <b>CNN</b> models and updated existing ones using <b>Tensorflow</b>.</li>
+                    <li>Automated data pre-processing pipeline and model benchmarking using <b>Python</b>.</li>
+                    <li>Deployed watchdog client using <b>Python</b> for server monitoring and control.</li>
+                </ul>
+            </div>
+
+            <!-- <div class="page-break"></div> -->
+
+            <div class="job-item">
+                <div class="item-header">
+                    <h3>Graduate Student Researcher</h3>
+                    <span class="date">Sep 2017 - Oct 2019</span>
+                </div>
+                <div class="details-row">
+                    <span class="company-name">McGill University</span>
+                    <span class="location">Montreal, Canada</span>
+                </div>
+                <ul>
+                    <li>Developed ensemble classifier for medical microwave radar scans using <b>Python</b>.</li>
+                    <li>Performed extensive statistical analysis on radar scans using <b>Matlab</b> and <b>R</b>.</li>
+                    <li>Optimized ensemble training using advanced adaptive algorithms.</li>
+                    <li>Improved predictive performance by proposing new time-frequency decomposition features.</li>
+                    <li>Streamlined data pre-processing by developing tools in <b>Python</b>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <h3>Blog Website</h3>
+                    <span class="date">Oct 2025</span>
+                </div>
+                <p class="project-details">
+                    A blog website that allows visitors to: view, create, edit and delete blog entries. <br>
+                    GitHub: <a href="https://github.com/collinapjoseph/web-blog" target="_blank">collinapjoseph/web-blog</a> <br>
+                    Stack: <span class="project-stack">HTML, CSS, EJS, Bootstrap, JavaScript, jQuery, Node.js, Express.js</span>
+                </p>
+            </div>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <h3>"Simon" Memory Game</h3>
+                    <span class="date">Sep 2025</span>
+                </div>
+                <p class="project-details">
+                    Browser-based implementation of the "Simon" sequential memory game. <br>
+                    Demo: <a href="https://collinapjoseph.github.io/web_projects/simon-game/index.html" target="_blank">collinapjoseph.github.io/simon-game</a> <br>
+                    Stack: <span class="project-stack">HTML, CSS, JavaScript, jQuery</span>
+                </p>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <h3>Drum Kit</h3>
+                    <span class="date">Sep 2025</span>
+                </div>
+                <p class="project-details">
+                    Browser-based app where user can play drums using keystrokes or mouse. <br>
+                    Demo: <a href="https://collinapjoseph.github.io/web_projects/drum-kit/index.html" target="_blank">collinapjoseph.github.io/drum-kit</a><br>
+                    Stack: <span class="project-stack">HTML, CSS, JavaScript</span>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Master's of Engineering, Electrical Engineering</h3>
+                    <span class="date">2019</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">McGill University</span>
+                    <span class="location">Montreal, Canada</span>
+                </div>
+                <p class="education-details">
+                    Master's Thesis: <a href="https://escholarship.mcgill.ca/concern/theses/q237hx06z" target="_blank">mcgill.ca/theses/q237hx09z</a>.<br>
+                    Coursework: Machine Learning, Linear Models, Optimization. <br>
+                    GPA: 3.3
+                </p>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Bachelor's of Applied Science, Electrical Engineering</h3>
+                    <span class="date">2017</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">University of Waterloo</span>
+                    <span class="location">Waterloo, Canada</span>
+                </div>
+                <p class="education-details">
+                    Co-op program (24 months of industry internships in total). <br>
+                    Coursework: Algorithm Design & Analysis, Adaptive Algorithms, Digital Signal Processing. <br>
+                    GPA: 3.3
+                </p>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Google Prompt Essentials</h3>
+                    <span class="date">Aug 2025</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">Google Career Certificates</span>
+                    <span class="location">Online</span>
+                </div>
+                <p class="education-details">
+                    Advanced frameworks and techniques for <b>Prompting Generative AI</b> tools.<br>
+                    Methods for using <b>Generative AI</b> to streamline data analysis.<br>
+                    Strategies for using <b>Generative AI</b> as <b>AI Agents</b> to enhance productivity.<br>
+                </p>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Deep Learning Specialization</h3>
+                    <span class="date">Sep 2019</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">Coursera, DeepLearning.AI</span>
+                    <span class="location">Online</span>
+                </div>
+                <p class="education-details">
+                    Five-course specialization developed by Stanford University's Andrew Ng.<br>
+                    Detailed explanation of essential <b>Deep Learning</b> architectures, including: Deep Neural Networks, CNNs, RNNs LSTMs.<br>
+                    Frameworks for structuring <b>Machine Learning</b> projects and <b>Python</b>-based assignments using <b>Tensorflow</b> and <b>Keras</b>.<br>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-row">
+                <div class="skill-category">
+                    Technical Skills:
+                </div>
+                <div class="skill-list">
+                    C#, .NET, C++, Python, HTML, CSS, JavaScript, SQL, REST, Git, GitHub, JIRA, AI, Machine Learning, Object Oriented Programming, Algorithms & Data Structures, Prompt Engineering
+                </div>
+            </div>
+            <div class="skills-row">
+                <div class="skill-category">
+                    Soft Skills:
+                </div>
+                <div class="skill-list">
+                    Leadership, Research, Agile Project Management, Technical Communication & Documentation
+                </div>
+            </div>
+            <div class="skills-row">
+                <div class="skill-category">
+                    Languages:
+                </div>
+                <div class="skill-list">
+                    English (Native), French (Basic), Spanish (Basic)
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
