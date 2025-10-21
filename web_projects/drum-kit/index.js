@@ -37,10 +37,12 @@ function drumButtonCallback(letter){
     playButtonAnimation(letter);
 }
 
+// Main
+
 var btnList = document.querySelectorAll(".drum");
 for (var i = 0; i < btnList.length; i++){
     btnList[i].addEventListener("click", function (){
-            drumButtonCallback(this.textContent);
+            drumButtonCallback(this.textContent.toLowerCase());
         });
 }
 
