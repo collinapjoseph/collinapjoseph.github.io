@@ -93,6 +93,40 @@
             align-items: flex-start;
             margin-bottom: 5px;
         }
+        
+        .layout-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2px;
+        }
+        
+        .layout-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+        
+        .left-cell {
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .right-cell {
+            text-align: right;
+            color: #333333;
+        }
+
+        .title-cell {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .date-cell {
+            text-align: right;
+            font-size: 14px;
+            color: #333333;
+        }
+
 
         .company-name, .institution-name {
             font-size: 14px;
@@ -366,19 +400,48 @@
             <h2>Projects</h2>
             
             <div class="project-item">
-                <div class="item-header">
-                    <h3>Cloud Deployable Computer Vision API</h3>
-                    <span class="date">Jun 2026</span>
-                </div>
-                <p class="project-details">
-                    A containerized REST API that accepts handwritten digits and retuns classifications.<br>
-                    Deployed on Google Cloud Run.<br>
-                    Demo: <a href="https://handwritten-digit-api-813973843354.europe-west1.run.app" target="_blank">gcp/handwritten-digit-api</a><br>
-                    Repo: <a href="https://github.com/collinapjoseph/handwritten-digit-api" target="_blank">github/handwritten-digit-api</a><br>
-                    Skills & Stack: <span class="project-stack">Machine Learning, Docker, FastAPI, PyTorch, ONNX, GCP</span>
+                <table class="layout-table">
+                    <tr>
+                        <td class="title-cell">Capstone: Text Extraction from Images of Handwritten Prescriptions</td>
+                        <td class="date-cell">Ongoing</td>
+                    </tr>
+                </table>
+                <p class="project-details" style="margin-top: 3px;">
+                    Containerized REST API that extracts medication information from handwritten prescriptions. <br>
+                    Demo: <a href="https://aig-capstone-813973843354.europe-west1.run.app" target="_blank">gcp/capstone</a><br>
+                    Repo: <a href="https://github.com/juliaysobel/aig-capstone" target="_blank">github/capstone</a><br>
+                    Stack: <b>Python, FastAPI, Docker, GCP, PyTorch, Hugging Face</b><br>
                 </p>
             </div>
 
+            <div class="project-item">
+                <table class="layout-table">
+                    <tr>
+                        <td class="title-cell">Personalized Medication Assistant</td>
+                        <td class="date-cell">Ongoing</td>
+                    </tr>
+                </table>
+                <p class="project-details" style="margin-top: 3px;">
+                    Chatbot assistant that uses <b>Retrieval Augemented Generation</b> to provide information about user medication regimens. <br>
+                    Stack: <b>Python, GeminiAPI, Langchain, ChromaDB</b><br>
+                </p>
+            </div>
+    
+            <div class="project-item">
+                <table class="layout-table">
+                    <tr>
+                        <td class="title-cell">Cloud Deployable Computer Vision API</td>
+                        <td class="date-cell">Jun 2026</td>
+                    </tr>
+                </table>
+                <p class="project-details" style="margin-top: 3px;">
+                    Containerized REST API that accepts handwritten digits and retuns classifications using a CNN model. <br>
+                    Demo: <a href="https://handwritten-digit-api-813973843354.europe-west1.run.app" target="_blank">gcp/handwritten-digit-api</a><br>
+                    Repo: <a href="https://github.com/collinapjoseph/handwritten-digit-api" target="_blank">github/handwritten-digit-api</a><br>
+                    Stack: <b>Python, FastAPI, PyTorch, Docker, GCP</b><br>
+                </p>
+            </div>
+            
             <div class="project-item">
                 <div class="item-header">
                     <h3>Computer Vision: Vehicle Detection Using YOLO26n</h3>
@@ -386,7 +449,7 @@
                 </div>
                 <p class="project-details">
                     Python notebook using YOLO26n to detect vehicles in Toronto street camera images with a Gradio UI.<br>
-                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-vehicle-detection-using-yolo26" target="_blank">collinapjoseph/notebook-vehicle-detection-using-yolo26</a><br>
+                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-vehicle-detection-using-yolo26" target="_blank">collinapjoseph/ml-notebook-vehicle-detection-using-yolo26</a><br>
                     Skills & Stack: <span class="project-stack">Machine Learning, Python, PyTorch, Gradio</span>
                 </p>
             </div>
@@ -398,7 +461,7 @@
                 </div>
                 <p class="project-details">
                     A Python notebook modelling diabetes diagnosis using Random Forests.<br>
-                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-diabetes-health-lifestyle-indicators" target="_blank">collinapjoseph/notebook-diabetes-health-lifestyle-indicators</a> <br>
+                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-diabetes-health-lifestyle-indicators" target="_blank">collinapjoseph/ml-notebook-diabetes-health-lifestyle-indicators</a> <br>
                     Skills & Stack: <span class="project-stack">Machine Learning, Python, Scikit-Learn</span>
                 </p>
             </div>
@@ -410,7 +473,7 @@
                 </div>
                 <p class="project-details">
                     A Python notebook modelling powerlifting athlete performance using Linear Regression and Decistion Tree. <br>
-                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-openpowerlifting-regression" target="_blank">collinapjoseph/notebook-openpowerlifting-regression</a> <br>
+                    Notebook: <a href="https://github.com/collinapjoseph/ml-notebook-openpowerlifting-regression" target="_blank">collinapjoseph/ml-notebook-openpowerlifting-regression</a> <br>
                     Skills & Stack: <span class="project-stack">Machine Learning, Python, Scikit-Learn</span>
                 </p>
             </div>
@@ -481,6 +544,38 @@
                     Coursework: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Robotics.
                 </p>
             </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Google Prompt Essentials</h3>
+                    <span class="date">Aug 2025</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">Google Career Certificates</span>
+                    <span class="location">Online</span>
+                </div>
+                <p class="education-details">
+                    Advanced frameworks and techniques for <b>Prompting Generative AI</b> tools.<br>
+                    Methods for using <b>Generative AI</b> to streamline data analysis.<br>
+                    Strategies for using <b>Generative AI</b> as <b>AI Agents</b> to enhance productivity.<br>
+                </p>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Deep Learning Specialization</h3>
+                    <span class="date">Sep 2019</span>
+                </div>
+                <div class="details-row">
+                    <span class="institution-name">Coursera, DeepLearning.AI</span>
+                    <span class="location">Online</span>
+                </div>
+                <p class="education-details">
+                    Five-course specialization developed by Stanford University's Andrew Ng.<br>
+                    Detailed explanation of essential <b>Deep Learning</b> architectures, including: Deep Neural Networks, CNNs, RNNs LSTMs.<br>
+                    Frameworks for structuring <b>Machine Learning</b> projects and <b>Python</b>-based assignments using <b>Tensorflow</b> and <b>Keras</b>.<br>
+                </p>
+            </div>
 
             <div class="education-item">
                 <div class="item-header">
@@ -515,40 +610,8 @@
                 </p>
             </div>
             
-            <div class="education-item">
-                <div class="item-header">
-                    <h3>Google Prompt Essentials</h3>
-                    <span class="date">Aug 2025</span>
-                </div>
-                <div class="details-row">
-                    <span class="institution-name">Google Career Certificates</span>
-                    <span class="location">Online</span>
-                </div>
-                <p class="education-details">
-                    Advanced frameworks and techniques for <b>Prompting Generative AI</b> tools.<br>
-                    Methods for using <b>Generative AI</b> to streamline data analysis.<br>
-                    Strategies for using <b>Generative AI</b> as <b>AI Agents</b> to enhance productivity.<br>
-                </p>
-            </div>
-            
-            <div class="education-item">
-                <div class="item-header">
-                    <h3>Deep Learning Specialization</h3>
-                    <span class="date">Sep 2019</span>
-                </div>
-                <div class="details-row">
-                    <span class="institution-name">Coursera, DeepLearning.AI</span>
-                    <span class="location">Online</span>
-                </div>
-                <p class="education-details">
-                    Five-course specialization developed by Stanford University's Andrew Ng.<br>
-                    Detailed explanation of essential <b>Deep Learning</b> architectures, including: Deep Neural Networks, CNNs, RNNs LSTMs.<br>
-                    Frameworks for structuring <b>Machine Learning</b> projects and <b>Python</b>-based assignments using <b>Tensorflow</b> and <b>Keras</b>.<br>
-                </p>
-            </div>
         </section>
 
-        <!--
         <section>
             <h2>Skills</h2>
             <div class="skills-row">
@@ -576,7 +639,7 @@
                 </div>
             </div>
         </section>
-        -->
+
     </div>
 
 </body>
