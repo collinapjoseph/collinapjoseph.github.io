@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CollinAPJosephCurriculumVitae</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: Arial, Helvetica, "Segoe UI", sans-serif; /* ATS-safe font stack */
+    color: #000000;
+    background: #ffffff;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    line-height: 1.5;
+    font-size: 11pt;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 12px;
+  }
+
+  h1.name {
+    font-size: 22pt;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.5px;
+  }
+
+  p.job-title {
+    font-size: 12pt;
+    margin: 0 0 10px 0;
+    color: #222222;
+  }
+
+  ul.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 10pt;
+  }
+
+  ul.contact-info li::after {
+    content: "";
+  }
+
+  /* ---------- Section styling ---------- */
+  section {
+    margin-bottom: 22px;
+  }
+
+  h2.section-title {
+    font-size: 13pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 4px;
+    margin: 0 0 12px 0;
+  }
+
+  /* ---------- Summary ---------- */
+  p.summary {
+    margin: 0;
+    text-align: left;
+  }
+
+  /* ---------- Entry blocks (used for Experience, Education, Volunteer) ---------- */
+  .entry {
+    margin-bottom: 14px;
+  }
+
+  .entry:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+  }
+
+  .entry-title {
+    font-weight: bold;
+    font-size: 11.5pt;
+  }
+
+  .entry-dates {
+    font-size: 10.5pt;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .entry-subheader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 10.5pt;
+    color: #333333;
+    margin-bottom: 6px;
+  }
+
+  .entry-org {
+    font-weight: normal;
+  }
+
+  .entry-location {
+    font-style: normal;
+  }
+
+  ul.bullet-list {
+    margin: 4px 0 0 0;
+    padding-left: 20px;
+  }
+
+  ul.bullet-list li {
+    margin-bottom: 4px;
+  }
+
+  /* ---------- Projects ---------- */
+  .project-links {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0 0 4px 0;
+  }
+
+  /* ---------- Certifications ---------- */
+  ul.simple-list {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  ul.simple-list li {
+    margin-bottom: 6px;
+  }
+
+  .cert-meta {
+    font-size: 10pt;
+    color: #333333;
+  }
+
+  /* ---------- Awards ---------- */
+  .award-item {
+    margin-bottom: 8px;
+  }
+
+  .award-title {
+    font-weight: bold;
+  }
+
+  .award-meta {
+    font-size: 10pt;
+    color: #333333;
+  }
+
+  /* ---------- Skills ---------- */
+  ul.skills-list {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  ul.skills-list li {
+    margin-bottom: 4px;
+    break-inside: avoid;
+  }
+
+  /* ---------- Print styles ---------- */
+  @media print {
+    body {
+      padding: 20px 30px;
+      font-size: 10.5pt;
+    }
+    .entry {
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <h1 class="name">Collin A. P. Joseph, MEng.</h1>
+    <p class="job-title">Artificial Intelligence Engineer | Machine Learning Engineer</p>
+    <ul class="contact-info">
+      <!-- <li>City, Province/State</li> -->
+      <!-- <li>Phone Number</li> -->
+      <li><a href="mailto:collin.joseph.0258@gmail.com">collin.joseph.0258@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/collinjoseph0258/">LinkedIn</a></li>
+      <li><a href="https://github.com/collinapjoseph">GitHub</a></li>
+      <li><a href="https://collinapjoseph.github.io">Website</a></li>
+    </ul>
+  </header>
+
+  <!-- ============ PROFESSIONAL SUMMARY ============ -->
+  <section aria-label="Professional Summary">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary">
+      Results-driven Artificial Intelligence and Machine Learning Engineer with 4+ years of experience in Software Development and a continuous-growth mindset. Skilled in
+      Python, Data Science, and AI Application Development. Proven track record of delivering customer-facing software products and features. Seeking to leverage experience and education to contribute to impactful AI related roles.
+    </p>
+  </section>
+
+  <!-- ============ WORK EXPERIENCE ============ -->
+  <section aria-label="Work Experience">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Technologist</span>
+        <span class="entry-dates">Sep 2026 - Present</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Seneca Polytechnic</span>
+        <span class="entry-location">Toronto, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Frontend application development using Angular.</li>
+        <li>Upgraded production application from Angular v19 to v22.</li>
+        <li>Accelerated development using GitHub Copilot.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Software Developer</span>
+        <span class="entry-dates">Dec 2020 - Mar 2025</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Yulio Technologies Inc.</span>
+        <span class="entry-location">Toronto, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Published and maintained multi-platform (.NET Core & .NET Framework) C# application.</li>
+        <li>Built C# REST API client to upload 3D models to cloud rendering platform.</li>
+        <li>Deployed C++ tool to generate and manipulate HDR image-based lighting environment maps.</li>
+        <li>Led multi-national development team while continuing hands-on development.</li>
+        <li>Shipped 12 features across 3 key software products per year using Agile Project Management.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Software Developer</span>
+        <span class="entry-dates">Nov 2019 - Apr 2020</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">wrnch AI</span>
+        <span class="entry-location">Montreal, Quebec</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Delivered new features for Computer Vision inference server using C++.</li>
+        <li>Prototyped new CNN models and updated existing ones using Tensorflow.</li>
+        <li>Automated data pre-processing pipeline and model benchmarking using Python.</li>
+        <li>Deployed watchdog client using Python for server monitoring and control.</li>
+        <li>Shipped new features and updates to clients using Docker.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Graduate Student Researcher</span>
+        <span class="entry-dates">Sep 2017 - Oct 2019</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">McGill University</span>
+        <span class="entry-location">Montreal, Quebec</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed ensemble classifier for medical microwave radar scans using Python.</li>
+        <li>Performed extensive statistical analysis on radar scans using MATLAB and R.</li>
+        <li>Optimized ensemble training using advanced adaptive algorithms.</li>
+        <li>Improved predictive performance by proposing new time-frequency decomposition features.</li>
+        <li>Streamlined data pre-processing by developing tools in Python.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Signal Processing Algorithm Developer</span>
+        <span class="entry-dates">Sep 2016 - Dec 2016</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">ON Semiconductor</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Prototyped an environment classification algorithm for low-resource digital hearing-aids (MATLAB & Assembly).</li>
+        <li>Optimized acoustic noise reduction algorithm in Assembly, decreasing power consumption by 20%.</li>
+        <li>Leveraged fixed point arithmetic operations to maximize algorithm efficiency on embedded hardware.</li>
+        <li>Executed rigorous regression testing on algorithm to ensure performance.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Signal Processing Algorithm Developer</span>
+        <span class="entry-dates">Jan 2016 - Apr 2016</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">ON Semiconductor</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Prototyped a digital equalizer firmware module in Assembly Language.</li>
+        <li>Simulated and performed experimental analysis on digital equalizer using MATLAB.</li>
+        <li>Executed and documented extensive test procedures for acoustic feedback cancellation algorithm.</li>
+        <li>Documented and presented analysis and test results to firmware and software development team.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Signal Processing Algorithm Developer</span>
+        <span class="entry-dates">May 2015 - Aug 2015</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">ON Semiconductor</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Prototyped a digital equalizer firmware module in Assembly Language.</li>
+        <li>Simulated and performed experimental analysis on digital equalizer using MATLAB.</li>
+        <li>Executed and documented extensive test procedures for acoustic feedback cancellation algorithm.</li>
+        <li>Documented and presented analysis and test results to firmware and software development team.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Teaching Assistant</span>
+        <span class="entry-dates">Sep 2014 - Dec 2014</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Faculty of Engineering, University of Waterloo</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Tutored engineering students in C# programming fundamentals.</li>
+        <li>Presented course content to students on an individual basis and in classes of up to 100.</li>
+        <li>Consistently completed administrative and pedagogical tasks ahead of deadlines.</li>
+        <li>Cooperated effectively with teaching team of 18 members to ensure smooth running of the course.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Research Assistant</span>
+        <span class="entry-dates">Jan 2014 - Aug 2014</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Center for Intelligent Antenna and Radio Systems, University of Waterloo</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed and evaluated a ray tracing simulation tool for radio wave propagation using C++ and MATLAB.</li>
+        <li>Improved runtime by over 60% using CUDA parallel computing platform on Nvidia GPU hardware.</li>
+        <li>Built GUI using MATLAB to visualize simulation results.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Electrical Engineering Intern</span>
+        <span class="entry-dates">May 2013 - Aug 2013</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">LPH Renewable Energy Ltd.</span>
+        <span class="entry-location">St Michael, Barbados</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Installed domestic and commercial scale photovoltaic power systems.</li>
+        <li>Assisted in project layout calculations and design.</li>
+        <li>Streamlined project cost estimation using Microsoft Excel.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section aria-label="Education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Graduate Certificate, Artificial Intelligence</span>
+        <span class="entry-dates">Jan 2026 - Oct 2026</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Seneca Polytechnic</span>
+        <span class="entry-location">North York, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Relevant coursework: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing</li>
+        <li>GPA: 4.0/4.0</li>
+        <li>Honors: President's List</li>
+      </ul>
+    </div>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Masters of Engineering, Electrical Engineering</span>
+        <span class="entry-dates">Sep 2017 - Oct 2019</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">McGill University</span>
+        <span class="entry-location">Montreal, Quebec</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Relevant coursework: Machine Learning, Signal Processing, Statistical Analysis</li>
+        <li>Thesis: <a href="https://escholarship.mcgill.ca/concern/theses/q237hx06z" target="_blank">Statistical analysis and machine learning algorithms for RF breast cancer screening</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Bachelors of Applied Science, Electrical Engineering</span>
+        <span class="entry-dates">Sep 2012 - Jun 2017</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">University of Waterloo</span>
+        <span class="entry-location">Waterloo, Ontario</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Co-op program (24 months of industry internships in total). </li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Secondary School Diploma, Sciences</span>
+        <span class="entry-dates">Sep 2005 - Jun 2012</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Harrison College</span>
+        <span class="entry-location">Bridgetown, Barbados</span>
+      </div>
+      <ul class="bullet-list">
+        <li>CAPE (A-level) Physics, Mathematics & Chemistry</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section aria-label="Projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Personalized Medication Assistant</span>
+        <span class="entry-dates">Sep 2026</span>
+      </div>
+      <p class="project-links">
+        Stack: <b>Python, Langchain, ChromaDB, GeminiAPI</b> <br> 
+        Repo: <a href="https://github.com/collinapjoseph/personalized-medication-assistant" target="_blank">github/personalized-medication-assistant</a>
+      </p>
+      <p>
+        Smart assistant that uses GeminiAPI and Retrieval Augmented Generation to provide information about user medication regimens. Everyday users can use this intelligent assistant to quickly obtain relevant information about medications stored in their profile.
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Text Extraction from Images of Handwritten Prescriptions</span>
+        <span class="entry-dates">Aug 2026</span>
+      </div>
+      <p class="project-links">
+        Stack: <b>Python, FastAPI, Docker, GCP, PyTorch, Hugging Face</b><br> 
+        Repo: <a href="https://github.com/collinapjoseph/text-extraction-from-handwritten-prescriptions" target="_blank">github/text-from-prescriptions</a>
+      </p>
+      <p>
+        Containerized REST API that identifies medication brand names from images of handwritten text.<br> API can be used to build cloud-deployable web applications to efficiently digitize physical medical records.
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Transformer-based Text Classification</span>
+        <span class="entry-dates">Aug 2026</span>
+      </div>
+      <p class="project-links">
+        Stack: <b>Python, PyTorch, Hugging Face</b><br> 
+        Repo: <a href="https://github.com/collinapjoseph/aig230-project" target="_blank">github/aig230-project</a>
+      </p>
+      <p>
+        NLP pipeline which classifies review sentiments using BERT base model and custom classification head.<br> Project demonstrates effective application of pre-trained transformer models to custom machine learning tasks.     
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Gesture Recognition Pipeline</span>
+        <span class="entry-dates">Aug 2026</span>
+      </div>
+      <p class="project-links">
+        Stack: <b>Python, Media Pipe, Scikit-Learn</b><br>
+        Repo: <a href="https://github.com/collinapjoseph/aig210-project" target="_blank">github/aig210-project</a>
+      </p>
+      <p>
+        Computer vision pipeline using Media Pipe and a custom classification head to recognize hand gestures in photos.<br> Project demonstrates effective use of existing machine learning libraries and with custom model development.      
+      </p>
+    </div>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Cloud Deployable Computer Vision API</span>
+        <span class="entry-dates">Jun 2026</span>
+      </div>
+      <p class="project-links">
+        Stack: <b>Python, FastAPI, PyTorch, Docker, GCP</b><br>
+        Repo: <a href="https://github.com/collinapjoseph/handwritten-digit-api" target="_blank">github/handwritten-digit-api</a>
+      </p>
+      <p>
+        Containerized REST API that accepts handwritten digits and returns classifications using a CNN model.<br> Project demonstrates effective use of data science frameworks, containerization and cloud-deployment tools.      
+      </p>
+    </div>
+    
+ </section>
+
+  <!-- ============ ONLINE CERTIFICATIONS ============ -->
+  <section aria-label="Online Certifications">
+    <h2 class="section-title">Online Certifications</h2>
+    <ul class="simple-list">
+      <li>
+        <strong>Google Prompt Essentials</strong> - Google Career Certificates
+        <div class="cert-meta">Issued: Aug 2025 | Credential URL: <a href="https://www.credly.com/badges/57c94f5b-4873-4630-9bd8-6cbc45db3f7f/public_url" target="_blank">[URL]</a></div>
+      </li>
+      <li>
+        <strong>Deep Learning Specialization</strong> - DeepLearning.AI, Coursera
+        <div class="cert-meta">Issued: Sep 2019 | Credential URL: <a href="https://www.coursera.org/account/accomplishments/specialization/N2DNAJY4YJLC" target="_blank">[URL]</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ VOLUNTEER POSITIONS ============ -->
+  <!--
+  <section aria-label="Volunteer Experience">
+    <h2 class="section-title">Volunteer Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Volunteer Role</span>
+        <span class="entry-dates">Mon YYYY - Mon YYYY</span>
+      </div>
+      <div class="entry-subheader">
+        <span class="entry-org">Organization Name</span>
+        <span class="entry-location">City, Province/State</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Coordinated [activity/program] supporting [cause/community], engaging [number] participants.</li>
+        <li>Organized [event/initiative] that raised [amount] / benefited [number] people.</li>
+      </ul>
+    </div>
+
+  </section>
+  -->
+
+  <!-- ============ AWARDS & HONORS ============ -->
+  <!--
+  <section aria-label="Awards and Honors">
+    <h2 class="section-title">Awards &amp; Honors</h2>
+
+    <div class="award-item">
+      <span class="award-title">Award Name</span> - <span class="award-meta">Issuing Organization, Mon YYYY</span>
+      <ul class="bullet-list">
+        <li>Awarded for [reason/achievement], selected from [context, e.g. "among 200 applicants"].</li>
+      </ul>
+    </div>
+
+    <div class="award-item">
+      <span class="award-title">Award Name</span> - <span class="award-meta">Issuing Organization, Mon YYYY</span>
+      <ul class="bullet-list">
+        <li>Recognized for [specific accomplishment or contribution].</li>
+      </ul>
+    </div>
+
+  </section>
+  -->
+  
+  <!-- ============ SKILLS (optional but recommended for ATS keyword matching) ============ -->
+  <section aria-label="Skills">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+      <li>Software Development</li>
+      <li>Python</li>
+      <li>C#</li>
+      <li>C++</li>
+    </ul>
+  </section>
+
+</body>
+</html>
