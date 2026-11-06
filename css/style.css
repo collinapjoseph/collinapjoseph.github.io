@@ -94,7 +94,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 /* ---------- Stats ---------- */
-.stats dl { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--line); }
+.stats dl { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
 .stats div { padding: 26px 22px; border-right: 1px solid var(--line); display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 6px; }
 .stats div:last-child { border-right: 0; }
 .stats dd { margin: 0; font: 400 clamp(2.2rem, 4vw, 3.2rem)/1 var(--serif); }
@@ -105,6 +105,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .stats div:nth-child(2) { border-right: 0; }
   .stats div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .stats div { padding: 20px 14px; }
+  .stats div:nth-child(3) { grid-column: 1 / -1; }
 }
 
 /* ---------- Sections ---------- */
@@ -200,3 +201,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   * { transition-duration: 0s !important; }
 }
 @media print { .nav, .theme, .hero__cta { display: none; } .reveal { opacity: 1; transform: none; } }
+
+/* Project cards with more than one link */
+.card__links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px 22px; padding-top: 14px; }
+.card__links .card__link { padding-top: 0; margin-top: 0; }
